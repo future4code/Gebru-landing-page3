@@ -1,0 +1,608 @@
+/*--------------------------------------------------------- Modificações Globais ------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#link-topo{
+  text-decoration: none;
+  color: rgb(224, 110, 3);
+  font-size: 40px;
+  background: none;
+  padding: 1px;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+}
+::-webkit-scrollbar {
+  width: 17px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+  background-color: #f6c6a6;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+  background-color: #ff5e00;
+  border-radius: 6px;
+ }
+/*--------------------------------------------------------- Header de todas as paginas------------------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.logo-img {
+  width: 90px;
+  margin-top: 5px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: linear-gradient(90deg, #db611b 5%, #f2ac57, #ce9e72);
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-list li {
+  letter-spacing: 7px;
+  margin-left: 32px;
+}
+.nav-list a:hover {
+  color: chartreuse;
+  transition: all 0.3s ease;
+}
+.nav-list a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0px;
+  background: chartreuse;
+  transition: all 0.6s ease;
+}
+.nav-list a:hover::before {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+/*--------------------------------------------------------- Seção1 ------------------------------------------------*/
+.primeira-secao{
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  background-image: url(img/fundo1.jpg);
+}
+
+
+.pagina1 {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+.texto-pagina1 {
+  display: flex;
+  margin-left: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.texto-pagin1 {
+  display: flex;
+  margin-left: -800px;
+  margin-top: 190px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.solicitar-conta {
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 380px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.solicitar-conta h2 {
+  margin-top: 50px;
+  color: rgb(194, 194, 194);
+}
+
+.solicitar-conta button {
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(90deg, #db611b 5%, #f2ac57, #ce9e72);
+  color: rgb(255, 255, 255);
+  font-size: 1.125em;
+  width: 170px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+svg {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 120px;
+  margin-top: -19px;
+}
+
+.solicitar-conta button:hover {
+  color: chartreuse;
+  transition: all 0.9s ease;
+}
+/*--------------------------------------------------------- Seção2 ------------------------------------------------*/
+.segunda-secao{
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  background-color: rgb(233, 233, 233);
+}
+.titulo-pagina2{
+  display: flex;
+  color: #db611b;
+  font-size: 60px;
+    
+}
+.titulo-pagina2:hover {
+  color: rgba(251, 121, 0, 0.746);
+  transition: all 0.3s ease;
+}
+
+.titulo-pagina2:hover::before {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.texto-pagina2{
+  color: black;
+  font-size: 40px;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+/*--------------------------------------------------------- Seção3 ------------------------------------------------*/
+.terceira-secao{
+  height: 60vh;
+  display: flex;
+  background-color: rgb(251, 217, 186) ;
+}
+.mae{
+  display: flex;
+  width: 40%;
+  height: 90%;
+  margin-top: 30px;
+}
+.texto-pagina3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+  justify-content: center;
+}
+
+.primeiro-pagina3{
+  display: flex;
+  font-size: 20px;
+  color: #db6b02;
+}
+.segundo-pagina3{
+  font-size: 40px;
+}
+.terceiro-pagina3{
+  font-size: 20px;
+}
+.seguros1 button{
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #db611b 5%, #f2ac57, #ce9e72);
+  color: rgb(255, 255, 255);
+  font-size: 1.125em;
+  width: 400px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.seguros1 button:hover {
+  color: chartreuse;
+  transition: all 0.9s ease;
+}
+/*--------------------------------------------------------- Seção4 ------------------------------------------------*/
+.quarta-secao{
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  background-color: rgb(233, 233, 233);
+}
+.familia1{
+  display: flex;
+  height: 80%;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+.familia2{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.texto-pagina4{
+  display: flex;
+  margin-top: 200px;
+  margin-left: 30px;
+  font-size: 50px;
+  color: #db611b;  
+}
+
+/*--------------------------------------------------------- Footer de todas as paginas ------------------------------------------------*/
+footer {
+  display: flex;
+
+  flex-shrink: 0;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  clear: both;
+  margin-top: auto;
+  background: rgb(54, 54, 54);
+}
+footer .bloco-lista {
+  width: 320px;
+  min-height: 150px;
+  padding: 20px;
+  color: #fff;
+}
+footer h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.bloco-lista ul li {
+  margin: 10px 0px;
+  list-style: none;
+}
+.bloco-lista h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.bloco-lista a:hover {
+  color: chartreuse;
+  transition: all 0.3s ease;
+}
+.bloco-lista a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 20px;
+  background: chartreuse;
+  transition: all 0.3s ease;
+}
+bloco.lista a:hover::before {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.app-logo {
+  display: flex;
+  margin-left: -9%;
+}
+
+.rede-logo {
+  display: inline-flex;
+  margin-left: 5px;
+}
+.rede-logo1 {
+  margin-left: 8px;
+}
+.rede-logo2 {
+  display: flex;
+  margin-top: -53.5px;
+  margin-left: 45px;
+}
+.rede-logo3 {
+  display: flex;
+  margin-top: -49px;
+  margin-left: 82px;
+}
+.rede-logo4 {
+  display: flex;
+  margin-top: -50px;
+  margin-left: 119px;
+}
+.logo-rede {
+  display: flex;
+  margin-left: 15px;
+}
+/*--------------------------------------------------------- Pagina Contatos ------------------------------------------------*/
+
+.usando-celular{
+  display: flex;
+  width: 50%;
+  height: 60%;
+  margin-top: -450px;
+  margin-left: 900px;
+}
+
+#subtitulo-contato{
+  padding-top: 180px;
+ color: rgb(255, 123, 0);
+ font-size: 60px;
+ margin-left: -900px;
+}
+
+fieldset{
+  border: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: -900px;
+
+}
+input,select,textarea,button{
+  border-radius: 5px;
+}
+.campo{
+  margin-bottom: 0em;
+}
+.campo label{
+  margin-bottom: 0.2em;
+  color: rgb(148, 148, 148);
+  display: block;
+}
+fieldset.grupo .campo{
+  float: left;
+  margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+padding: 0.2em;
+border: 1px solid rgb(255, 145, 0);
+box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+
+}
+.campo select option{
+  padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+background:  #faece5;
+
+}
+.botao-contato{
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #db611b 5%, #f2ac57, #ce9e72);
+  color: rgb(255, 255, 255);
+  font-size: 1.125em;
+  width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.botao-contato:hover{
+  color: chartreuse;
+  transition: all 0.9s ease;
+}
+
+#contato{
+  font-size: 1em;
+  color: rgb(148, 148, 148);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+
+  
+}
+
+
+
+/*--------------------------------------------------------- Pagina Sobre-nos ------------------------------------------------*/
+.secao-sobre{
+  display: flex;
+  height: 50vh;
+}
+.sobre-img{
+  display: flex;
+  width: 100%;
+}
+.texto-sobre{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50vh;
+  flex-direction: column;
+  background-color: rgb(251, 217, 186) ;
+}
+.titulo-sobre{
+  font-size: 80px;
+  margin-bottom: 00px;
+  color: #db611b;
+}
+.sub-sobre{
+margin-top: 40px;
+font-size: 40px;
+margin-bottom: 100px;
+
+}
+.sobre-nos{
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+/*--------------------------------------------------------- Responsivo Header ------------------------------------------------*/
+@media (max-width: 999px) {
+  .nav-list {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #db611b 5%, #f2ac57, #ce9e72);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform ease-in 0.3s;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .nav-list a:hover {
+    color: chartreuse;
+    transition: all 0.3s ease;
+  }
+  .nav-list a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+    background: chartreuse;
+    transition: all 0.6s ease;
+  }
+  .nav-list a:hover::before {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .logo-img {
+    margin-top: 4px;
+    width: 20%;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/*--------------------------------------------------------- Responsivo Seção1 ------------------------------------------------*/
+
+
+/*--------------------------------------------------------- Responsivo Seção2 ------------------------------------------------*/
+
+
+/*--------------------------------------------------------- Responsivo Seção3 ------------------------------------------------*/
+
+
+/*--------------------------------------------------------- Responsivo Seção4 ------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------- Responsivo Footer ------------------------------------------------*/
+@media (max-width: 999px) {
+  footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .bloco-lista {
+    text-align: center;
+  }
+  .bloco-lista .logo-app {
+    display: flex;
+    justify-content: center;
+  }
+  .bloco-lista .logo-rede {
+    display: flex;
+    justify-content: center;
+  }
+  .app-logo {
+    display: flex;
+    margin-left: 85px;
+  }
+  .rede-logo1 {
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 13px;
+  }
+  .rede-logo2 {
+    display: flex;
+    margin-left: 130px;
+    margin-bottom: 0px;
+  }
+  .rede-logo3 {
+    display: flex;
+    margin-left: 170px;
+    margin-bottom: 0px;
+  }
+  .rede-logo4 {
+    display: flex;
+    margin-left: 210px;
+  }
+}
